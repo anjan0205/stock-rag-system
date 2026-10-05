@@ -1,0 +1,25 @@
+# ---- Phase 1: Data layer ----
+yfinance>=0.2.55
+# Pinned to the 2.2.x line: pandas 3.0.x wheels were blocked by Windows
+# Smart App Control (unsigned/low-reputation DLLs). 2.2.x is recognized.
+pandas>=2.2.0,<2.3
+requests>=2.32.0
+feedparser>=6.0.11          # Google News RSS parsing
+pypdf>=5.1.0                # earnings / investor-deck PDF extraction
+
+# ---- RAG / vector store & LLM ----
+chromadb>=0.5.20
+google-genai>=0.1.0
+
+# ---- Web UI (Streamlit dashboard) ----
+streamlit>=1.39.0
+plotly>=5.24.0
+
+
+# ---- Config / validation / schemas ----
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.1
+
+# ---- Testing ----
+pytest>=8.3.0
